@@ -1,0 +1,11 @@
+node_modules/
+pnpm-lock.yaml
+.vitepress/dist/
+.vitepress/cache/
+
+# CodeGraph is outside the toolkit-managed ignore contract.
+.codegraph/
+.codegraph-*/
+
+# Local/private architecture notes (not part of base-docs)
+docs/factory-ai-stack.md

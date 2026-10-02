@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "description": "Docs-side indexes — NOT FE design.registry codegen SSOT. Prefer resolve by ID. Common system IDs use …/common/code/{UI-CMN-*,API-CMN-*} (never …/common/UI-* without /code/).",
+  "modules": [
+    {
+      "id": "CMP-01",
+      "slug": "auth",
+      "ownerSurface": "admin-web",
+      "path": "product/surfaces/admin-web/modules/CMP-01-auth",
+      "linkedSurfaces": [],
+      "screens": ["W-AD-AUTH-001"],
+      "apis": ["API-AD-AUTH-001"]
+    }
+  ],
+  "codeIds": {
+    "W-AD-AUTH-001": "product/surfaces/admin-web/modules/CMP-01-auth/login/code/W-AD-AUTH-001",
+    "API-AD-AUTH-001": "product/surfaces/admin-web/modules/CMP-01-auth/login/code/API-AD-AUTH-001",
+    "UI-CMN-EMPTY-001": "product/surfaces/common/code/UI-CMN-EMPTY-001",
+    "API-CMN-HEALTH-001": "product/surfaces/common/code/API-CMN-HEALTH-001"
+  },
+  "commonIdPolicy": {
+    "systemUi": "UI-CMN-* → product/surfaces/common/code/UI-CMN-*",
+    "systemApi": "API-CMN-* → product/surfaces/common/code/API-CMN-*",
+    "requireCodeSegment": true
+  }
+}
